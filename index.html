@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --paper: #f6f5f1;
+    --ink: #1f2723;
+    --ink-soft: #4d564f;
+    --accent: #3e6259;
+    --rule: #d8d5cb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    margin: 0 0 2.8rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table tr {
+    border-top: 1px solid var(--rule);
+  }
+
+  table tr:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  table th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--accent);
+    padding: 1rem 1.5rem 1rem 0;
+    width: 30%;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  table td {
+    padding: 1rem 0;
+    vertical-align: top;
+  }
+
+  footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 480px) {
+    table th, table td {
+      display: block;
+      width: 100%;
+      padding: 0.3rem 0;
+    }
+    table th {
+      padding-top: 1rem;
+    }
+    table tr {
+      display: block;
+      padding-bottom: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Your Name</h1>
+  <p class="role">BAS Cyber Security, Junior</p>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Charlie Sinasky</td>
+    </tr>
+    <tr>
+      <th>Introduction</th>
+      <td>Write a couple of sentences about yourself here — where you're studying, what you're interested in, and anything else you'd like to share.</td>
+    </tr>
+    <tr>
+      <th>Hobbies</th>
+      <td>programming, hiking, software development, and bird watching</td>
+    </tr>
+  </table>
+
+  <footer>
+    Find my work on <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
