@@ -1,0 +1,7 @@
+title: Charlie Sinasky
+description: CS Site
+theme: minima
+
+minima:
+  skin: auto
+  show_excerpts: false
