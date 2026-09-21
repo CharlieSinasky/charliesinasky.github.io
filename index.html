@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --paper: #f6f5f1;
+    --ink: #1f2723;
+    --ink-soft: #4d564f;
+    --accent: #3e6259;
+    --rule: #d8d5cb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    margin: 0 0 0.4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    margin: 0 0 2.8rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table tr {
+    border-top: 1px solid var(--rule);
+  }
+
+  table tr:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  table th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--accent);
+    padding: 1rem 1.5rem 1rem 0;
+    width: 30%;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  table td {
+    padding: 1rem 0;
+    vertical-align: top;
+  }
+
+  footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  footer a:hover {
+    border-bottom-color: var(--accent);
+  }
+
+  @media (max-width: 480px) {
+    table th, table td {
+      display: block;
+      width: 100%;
+      padding: 0.3rem 0;
+    }
+    table th {
+      padding-top: 1rem;
+    }
+    table tr {
+      display: block;
+      padding-bottom: 0.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Charlie Sinasky</h1>
+  <p class="role">BAS Cyber Security, Junior</p>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Charlie Sinasky</td>
+    </tr>
+    <tr>
+      <th>Introduction</th>
+      <td>I was the sole developer of a game that made me around $10k and had been played around 5 million different times by the time it died off a few years after release. Throughout that time period, I learned a lot about security and why it matters so much and became fascinated with information security. Since then, I have applied concepts of information security I’ve learned into some of my projects. The most useful project I’ve completed so far was setting up a server that runs an open source and fully local version of Google Home called Home Assistant on a Raspberry Pi. I used it to set up my own encrypted DNS server that could also block known tracking or advertising domains from being visible on all devices across my network. Not long after, I set up a Cloudflare tunnel to expose my home assistant instance to the internet by running it through a domain I purchased so I didn’t have to risk exposing my router by opening a port.</td>
+    </tr>
+    <tr>
+      <th>Hobbies</th>
+      <td>programming, hiking, software development, and bird watching</td>
+    </tr>
+  </table>
+
+  <footer>
+    Find my work on <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
